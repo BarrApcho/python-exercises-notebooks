@@ -1,0 +1,16 @@
+diccionario = {
+    'id_cliente': [1, 2, 3, 4, 2, 5, 3, 6],
+    'nombre':     ['Ana García', 'Luis Pérez', 'María López', 'Carlos Ruiz',
+                   'Luis Pérez', 'Rosa Díaz', 'María López', 'Pedro Martín'],
+    'edad':       [28, 34, 45, 22, 34, 29, 45, 38],
+    'ciudad':     ['Lima', 'Arequipa', 'Cusco', 'Lima', 'Arequipa', 'Trujillo', 'Cusco', 'Lima'],
+    'compra_sol': [150.0, 320.0, 89.5, 210.0, 320.0, 175.0, 89.5, 430.0]
+
+}
+print_titulo('Datos originales')
+df = pd.DataFrame(diccionario)
+display(df)
+
+print_titulo('El DataFrame tiene:')
+print(f'{df.shape[0]} filas')
+print(f'{df.shape[1]} columnas')
